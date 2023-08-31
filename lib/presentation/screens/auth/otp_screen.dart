@@ -90,7 +90,7 @@ class OtpScreen extends StatelessWidget {
                 height: ConfigSize.screenHeight! * .016,
               ),
               TextFieldPin(
-                autoFocus: true,
+                autoFocus: false,
                 onChange: (_) {},
                 defaultBoxSize: 48,
                 margin: 7,
