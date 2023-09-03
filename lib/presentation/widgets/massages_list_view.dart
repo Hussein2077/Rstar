@@ -53,7 +53,7 @@ class ListViewBody extends StatelessWidget {
                 style: TextStyle(
                     fontSize: 14,
                     fontWeight: FontWeight.w500,
-                    color: greyColor),
+                    color:AppColor. greyColor),
               )
             ],
           ), SizedBox(

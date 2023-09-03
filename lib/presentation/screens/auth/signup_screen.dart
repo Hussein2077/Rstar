@@ -61,7 +61,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                  style: TextStyle(
                    fontSize: ConfigSize.screenHeight! * .018,
                    fontWeight: FontWeight.bold,
-                   color: blackColor,
+                   color: AppColor.blackColor,
                  ),
                ),
                SizedBox(

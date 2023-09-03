@@ -33,14 +33,14 @@ class HistoryLongContainer extends StatelessWidget {
                 style: const TextStyle(
                     fontSize: 14,
                     fontWeight: FontWeight.w600,
-                    color: primaryColor),
+                    color: AppColor.primaryColor),
               ),const SizedBox(width: 5,),
               const Text(
                 StringManager.diamonds,
                 style: TextStyle(
                     fontSize: 14,
                     fontWeight: FontWeight.w600,
-                    color: primaryColor),
+                    color: AppColor.primaryColor),
               ),
             ],
           ),
@@ -51,14 +51,14 @@ class HistoryLongContainer extends StatelessWidget {
                 style: const TextStyle(
                     fontSize: 14,
                     fontWeight: FontWeight.w600,
-                    color: primaryColor),
+                    color: AppColor.primaryColor),
               ),const SizedBox(width: 5,),
               const Text(
                 StringManager.hours,
                 style: TextStyle(
                     fontSize: 14,
                     fontWeight: FontWeight.w600,
-                    color: primaryColor),
+                    color: AppColor.primaryColor),
               ),
             ],
           ),
@@ -69,14 +69,14 @@ class HistoryLongContainer extends StatelessWidget {
                 style: const TextStyle(
                     fontSize: 14,
                     fontWeight: FontWeight.w600,
-                    color: primaryColor),
+                    color: AppColor.primaryColor),
               ),const SizedBox(width: 5,),
               const Text(
                 StringManager.days,
                 style: TextStyle(
                     fontSize: 14,
                     fontWeight: FontWeight.w600,
-                    color: primaryColor),
+                    color:AppColor. primaryColor),
               ),
             ],
           ),

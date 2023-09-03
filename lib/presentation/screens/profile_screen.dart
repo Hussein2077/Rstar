@@ -39,7 +39,7 @@ class ProfileScreen extends StatelessWidget {
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(15),
                             border: Border.all(color: Colors.white),
-                            color: containerColor,
+                            color:AppColor. containerColor,
                           ),
                           child:  Column(
                             mainAxisAlignment: MainAxisAlignment.center,
@@ -149,6 +149,10 @@ class ProfileScreen extends StatelessWidget {
                     ProfileInfo(
                       text: StringManager.level,
                       icon: Image.asset(AssetsPath.levels),
+                      onTap: (){
+                        Navigator.pushNamed(context, Routes.levelScreen);
+
+                      },
                     ),
                     ProfileInfo(
                       text: StringManager.settings,

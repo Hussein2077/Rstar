@@ -22,7 +22,7 @@ class IconsColumn extends StatelessWidget {
           Text(text,
 
           style: TextStyle(
-            color: primaryColor,
+            color:AppColor. primaryColor,
             fontWeight: FontWeight.w600,
             fontSize: 14
           ),),

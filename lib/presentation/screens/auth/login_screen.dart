@@ -39,7 +39,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   Text(
                     StringManager.halaWGala,
                     style: TextStyle(
-                      color: primaryColor,
+                      color: AppColor.primaryColor,
                       fontWeight: FontWeight.bold,
                       fontSize: ConfigSize.screenHeight! * .032,
                     ),
@@ -50,7 +50,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   Text(
                     StringManager.tara,
                     style: TextStyle(
-                      color: primaryColor,
+                      color: AppColor.primaryColor,
                       fontWeight: FontWeight.bold,
                       fontSize: ConfigSize.screenHeight! * .015,
                     ),
@@ -63,7 +63,7 @@ class _LoginScreenState extends State<LoginScreen> {
               Text(
                 StringManager.login,
                 style: TextStyle(
-                  color: primaryColor,
+                  color: AppColor.primaryColor,
                   fontWeight: FontWeight.bold,
                   fontSize: ConfigSize.screenHeight! * .020,
                 ),
@@ -85,7 +85,7 @@ class _LoginScreenState extends State<LoginScreen> {
               Text(
                 StringManager.password,
                 style: TextStyle(
-                  color: primaryColor,
+                  color: AppColor.primaryColor,
                   fontWeight: FontWeight.bold,
                   fontSize: ConfigSize.screenHeight! * .020,
                 ),
@@ -119,9 +119,9 @@ class _LoginScreenState extends State<LoginScreen> {
                 child: Text(
                   StringManager.forgetPassword,
                   style: TextStyle(
-                    color: resetPasswordColor,
+                    color: AppColor.resetPasswordColor,
                     decoration: TextDecoration.underline,
-                    decorationColor: resetPasswordColor,
+                    decorationColor: AppColor.resetPasswordColor,
                     fontWeight: FontWeight.w400,
                     fontSize: ConfigSize.screenHeight! * .014,
                   ),
@@ -140,7 +140,7 @@ class _LoginScreenState extends State<LoginScreen> {
                       },
                       child: const Text(
                         StringManager.signUp,
-                        style: TextStyle(color: textButtonColor),
+                        style: TextStyle(color: AppColor.textButtonColor),
                       )),
                   SizedBox(
                     width: ConfigSize.screenWidth! * .03,
@@ -148,7 +148,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   CustomButton(
                     text: StringManager.login,
                     onPressed: () {
-                      Navigator.pushNamed(context, Routes.massageScreen);
+                      Navigator.pushNamed(context, Routes.profileScreen);
                     },
                   ),
                 ],
@@ -163,17 +163,17 @@ class _LoginScreenState extends State<LoginScreen> {
                 child: const Row(children: [
                   Expanded(
                       child: Divider(
-                    color: primaryColor,
+                    color:AppColor. primaryColor,
                     thickness: 3,
                   )),
                   Text(
                     StringManager.or,
                     style: TextStyle(
-                        fontWeight: FontWeight.bold, color: primaryColor),
+                        fontWeight: FontWeight.bold, color:AppColor. primaryColor),
                   ),
                   Expanded(
                       child: Divider(
-                    color: primaryColor,
+                    color: AppColor.primaryColor,
                     thickness: 3,
                   )),
                 ]),

@@ -27,7 +27,7 @@ class CustomTextField extends StatelessWidget {
       width: size.height * .87,
       child: Material(
         borderRadius: BorderRadius.circular(12),
-        shadowColor: primaryColor.withOpacity(.2),
+        shadowColor: AppColor.primaryColor.withOpacity(.2),
         elevation: 15,
         child: TextField(
           obscureText: obscureText,
@@ -41,7 +41,7 @@ class CustomTextField extends StatelessWidget {
 
             hintStyle: const TextStyle(
               fontWeight: FontWeight.bold,
-              color: hintTextColor,
+              color: AppColor.hintTextColor,
             ),
 
             // disabledBorder:OutlineInputBorder(
@@ -55,7 +55,7 @@ class CustomTextField extends StatelessWidget {
 
             focusedBorder: OutlineInputBorder(
                 borderRadius: BorderRadius.circular(12),
-                borderSide: const BorderSide(color: textButtonColor, width: 2)),
+                borderSide: const BorderSide(color: AppColor.textButtonColor, width: 2)),
           ),
         ),
       ),

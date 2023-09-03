@@ -23,7 +23,7 @@ class WalletScreen extends StatelessWidget {
             decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(15),
                 border: Border.all(color: Colors.white),
-                color: containerColor),
+                color: AppColor.containerColor),
             child: Stack(
               children: [
                 const Align(
@@ -33,7 +33,7 @@ class WalletScreen extends StatelessWidget {
                     style: TextStyle(
                         fontWeight: FontWeight.w600,
                         fontSize: 64,
-                        color: goldColor),
+                        color: AppColor.goldColor),
                   ),
                 ),
                 Positioned(

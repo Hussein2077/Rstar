@@ -24,11 +24,11 @@ final String leftText;
           Text(leftText,style: const TextStyle(
             fontSize: 14,
             fontWeight: FontWeight.w600,
-            color: primaryColor
+            color: AppColor.primaryColor
           ),),
           Text(rightText,style: const TextStyle(
             fontSize: 14,
-            fontWeight: FontWeight.w600, color: primaryColor
+            fontWeight: FontWeight.w600, color: AppColor.primaryColor
           ),),
 
         ],

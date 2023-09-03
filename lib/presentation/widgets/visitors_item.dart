@@ -12,7 +12,7 @@ class VisitorsItem extends StatelessWidget {
       height: ConfigSize.screenHeight! * .11,
       width: ConfigSize.screenWidth! * .88,
       decoration: BoxDecoration(
-        color: containerColor,
+        color: AppColor.containerColor,
          borderRadius:  BorderRadius.circular(15),
       ),child:  Padding(
         padding: const EdgeInsets.all(12.0),
@@ -35,7 +35,7 @@ class VisitorsItem extends StatelessWidget {
                 style: TextStyle(
                     fontWeight: FontWeight.w600,
                     fontSize: 14,
-                    color: hintColor),
+                    color:AppColor. hintColor),
               ),
             ],
           ),

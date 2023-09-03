@@ -50,6 +50,7 @@ class StringManager {
   static const String diamonds ='الماس';
   static const String allInfo ='كل المعلومات';
   static const String days ='أيام';
+  static const String need ='يحتاج';
 
 
 

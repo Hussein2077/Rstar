@@ -14,7 +14,7 @@ class WalletContainer extends StatelessWidget {
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(15),
           border: Border.all(color: Colors.white),
-          color: containerColor,
+          color: AppColor.containerColor,
         ),
         height: ConfigSize.screenHeight! * .15,
         width: ConfigSize.screenWidth! * .412,
@@ -25,7 +25,7 @@ child: Column(
       Text('800',  style: TextStyle(
         fontWeight: FontWeight.w600,
         fontSize: 20,
-        color: goldColor),),
+        color: AppColor.goldColor),),
     Text('\$49.99',  style: TextStyle(
         fontWeight: FontWeight.w600,
         fontSize: 14,

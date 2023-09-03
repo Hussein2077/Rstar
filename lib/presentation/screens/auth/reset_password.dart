@@ -16,37 +16,40 @@ class ResetPassword extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
 
-      body: Column(
+      body: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 24),
+        child: Column(
 
-        children: [
-          const CustomAppBar(text: StringManager.forgetPassword),
-          SizedBox(height:ConfigSize.screenHeight!*.03,),
-          Text(
-           StringManager.pleaseEnterYourPhoneReset,
-            style: TextStyle(
-              fontSize: ConfigSize.screenHeight!*.018,
-              fontWeight: FontWeight.bold,
-              color: blackColor,
+          children: [
+            const CustomAppBar(text: StringManager.forgetPassword),
+            SizedBox(height:ConfigSize.screenHeight!*.03,),
+            Text(
+             StringManager.pleaseEnterYourPhoneReset,
+              style: TextStyle(
+                fontSize: ConfigSize.screenHeight!*.018,
+                fontWeight: FontWeight.bold,
+                color: AppColor.blackColor,
+              ),
             ),
-          ),
-          SizedBox(height: ConfigSize.screenHeight!*.017,),
-          CustomTextField(
-            keyboardType: TextInputType.phone,
-            prefixIcon: InternationalPhoneNumberInput(
+            SizedBox(height: ConfigSize.screenHeight!*.017,),
+            CustomTextField(
+              keyboardType: TextInputType.phone,
+              prefixIcon: InternationalPhoneNumberInput(
 
-              onInputChanged: (PhoneNumber value) {  },
+                onInputChanged: (PhoneNumber value) {  },
+
+              ),
 
             ),
-
-          ),
-          SizedBox(height: ConfigSize.screenHeight!*.07,),
-          Padding(
-            padding:  EdgeInsets.only(left: ConfigSize.screenWidth!*.5),
-            child: CustomButton(text: StringManager.next, onPressed: (){
-          Navigator.pushNamed(context, Routes.otp);
-            }),
-          )
-        ],
+            SizedBox(height: ConfigSize.screenHeight!*.07,),
+            Padding(
+              padding:  EdgeInsets.only(left: ConfigSize.screenWidth!*.5),
+              child: CustomButton(text: StringManager.next, onPressed: (){
+            Navigator.pushNamed(context, Routes.otp);
+              }),
+            )
+          ],
+        ),
       ),
     );
   }

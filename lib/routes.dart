@@ -5,8 +5,8 @@ import 'package:saulefna/presentation/screens/auth/otp_screen.dart';
 import 'package:saulefna/presentation/screens/auth/reset_password.dart';
 import 'package:saulefna/presentation/screens/auth/signup_screen.dart';
 import 'package:saulefna/presentation/screens/history_life.dart';
-import 'package:saulefna/presentation/screens/home_screen.dart';
-import 'package:saulefna/presentation/screens/massage_screen.dart';
+import 'package:saulefna/presentation/screens/level_screen.dart';
+ import 'package:saulefna/presentation/screens/massage_screen.dart';
 import 'package:saulefna/presentation/screens/payment_screen.dart';
 import 'package:saulefna/presentation/screens/profile_screen.dart';
 import 'package:saulefna/presentation/screens/spalsh_screen.dart';
@@ -28,6 +28,7 @@ class Routes {
   static const String paymentScreen = "/paymentScreen";
   static const String visitorScreen = "/visitorScreen";
   static const String historyLife = "/historyLife";
+  static const String levelScreen = "/levelScreen";
 
 
 }
@@ -47,8 +48,8 @@ class RouteGenerator {
         return MaterialPageRoute(builder: (_) => const OtpScreen());
       case Routes.changePassword:
         return MaterialPageRoute(builder: (_) => const ChangePasswordScreen());
-      case Routes.homeScreen:
-        return MaterialPageRoute(builder: (_) => const HomeScreen());
+      // case Routes.homeScreen:
+      //   return MaterialPageRoute(builder: (_) => const HomeScreen());
       case Routes.massageScreen:
         return MaterialPageRoute(builder: (_) => const MassageScreen());
       case Routes.profileScreen:
@@ -61,7 +62,8 @@ class RouteGenerator {
         return MaterialPageRoute(builder: (_) => const VisitorScreen());
       case Routes.historyLife:
         return MaterialPageRoute(builder: (_) => const HistoryLife());
-
+      case Routes.levelScreen:
+        return MaterialPageRoute(builder: (_) => const LevelScreen());
     }
     return unDefinedRoute();
   }

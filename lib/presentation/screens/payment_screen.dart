@@ -16,7 +16,7 @@ class PaymentScreen extends StatefulWidget {
 class _PaymentScreenState extends State<PaymentScreen> {
   @override
   Widget build(BuildContext context) {
-    String? selectedOption = 'Option 1';
+    int? selectedValue = 1;
 
 
     return Scaffold(
@@ -37,13 +37,13 @@ class _PaymentScreenState extends State<PaymentScreen> {
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(15),
                       border: Border.all(color: Colors.white),
-                      color: paymentContainerColor,
+                      color: AppColor.paymentContainerColor,
                     ),
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: [
                         Image.asset(AssetsPath.paymentLogo),
-                        Row(
+                        const Row(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             Text(
@@ -77,22 +77,36 @@ class _PaymentScreenState extends State<PaymentScreen> {
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(15),
         border: Border.all(color: Colors.white),
-        color: paymentContainerColor,
+        color:AppColor. paymentContainerColor,
       ),
-      child: Column(
-        children: [
-         RadioListTile(
-            title: Text('Option 1'),
-            value: 'Option 1',
-            groupValue: selectedOption,
-            onChanged: ( value){
-              setState(() {
-                selectedOption = value;
-              });
-            },
-          ),
-        ],
-      ),
+      child:StatefulBuilder(builder: (context,_setState){
+        return  Column(
+          children: [
+            RadioListTile(
+              value: 1,
+              groupValue: selectedValue,
+              onChanged: (value) {
+                _setState(() {
+                  selectedValue = value;
+                });
+              },
+              title: Text('Option 1'),
+               activeColor: Colors.blue, // Customize the selected color
+            ),
+            RadioListTile(
+              value: 2,
+              groupValue: selectedValue,
+              onChanged: (value) {
+                _setState(() {
+                  selectedValue = value;
+                });
+              },
+              title: Text('Option 2'),
+              activeColor: Colors.blue, // Customize the selected color
+            ),
+          ],
+        );
+      },)
     )
               ],
             ),

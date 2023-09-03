@@ -14,12 +14,12 @@ final bool isDividerVisible;
               Text(topText,style: const TextStyle(
                 fontSize: 16,
                 fontWeight: FontWeight.w600,
-        color: primaryColor,
+        color: AppColor.primaryColor,
               ),),
             Text(bottomText,style: const TextStyle(
               fontSize: 16,
               fontWeight: FontWeight.w600,
-              color: primaryColor,
+              color: AppColor.primaryColor,
             ),),
           ],
         ),
@@ -27,7 +27,7 @@ final bool isDividerVisible;
             visible: isDividerVisible,
     child: const SizedBox(
           height: 50,
-          child: VerticalDivider(color: hintColor,indent: 2,),
+          child: VerticalDivider(color:AppColor. hintColor,indent: 2,),
         ))
       ],
     );

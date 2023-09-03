@@ -10,9 +10,14 @@ import '../../../core/asset_path.dart';
 import '../../../core/config_size.dart';
 import '../../widgets/app_bar.dart';
 
-class OtpScreen extends StatelessWidget {
+class OtpScreen extends StatefulWidget {
   const OtpScreen({Key? key}) : super(key: key);
 
+  @override
+  State<OtpScreen> createState() => _OtpScreenState();
+}
+
+class _OtpScreenState extends State<OtpScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -40,7 +45,7 @@ class OtpScreen extends StatelessWidget {
                 style: TextStyle(
                   fontSize: ConfigSize.screenHeight! * .028,
                   fontWeight: FontWeight.bold,
-                  color: blackColor,
+                  color: AppColor.blackColor,
                 ),
               ),
               Stack(
@@ -52,7 +57,7 @@ class OtpScreen extends StatelessWidget {
                           style: TextStyle(
                             fontSize: ConfigSize.screenHeight! * .018,
                             fontWeight: FontWeight.bold,
-                            color: blackColor,
+                            color: AppColor.blackColor,
                           ),
                           children: [
                             TextSpan(
@@ -60,7 +65,7 @@ class OtpScreen extends StatelessWidget {
                               style: TextStyle(
                                 fontSize: ConfigSize.screenHeight! * .018,
                                 fontWeight: FontWeight.bold,
-                                color: buttonColor,
+                                color: AppColor.buttonColor,
                               ),
                             ),
                           ])),
@@ -68,7 +73,7 @@ class OtpScreen extends StatelessWidget {
                       top: 30,
                       right: 190,
                       child: Container(
-                          color: resetPasswordColor.withOpacity(.2),
+                          color: AppColor.resetPasswordColor.withOpacity(.2),
                           height: ConfigSize.screenHeight! * .028,
                           width: ConfigSize.screenWidth! * .134,
                           child: InkWell(
@@ -80,7 +85,7 @@ class OtpScreen extends StatelessWidget {
                                 style: TextStyle(
                                     fontWeight: FontWeight.w500,
                                     fontSize: 10,
-                                    color: resetPasswordColor),
+                                    color: AppColor.resetPasswordColor),
                               ),
                             ),
                           )))
@@ -91,19 +96,19 @@ class OtpScreen extends StatelessWidget {
               ),
               TextFieldPin(
                 autoFocus: false,
-                onChange: (_) {},
+                onChange: (value) {},
                 defaultBoxSize: 48,
                 margin: 7,
                 defaultDecoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(7),
                   border: Border.all(
-                    color: buttonColor,
+                    color: AppColor.buttonColor,
                   ),
                 ),
                 selectedDecoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(7),
                   border: Border.all(
-                    color: primaryColor,
+                    color:AppColor. primaryColor,
                   ),
                 ),
               ),

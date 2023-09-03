@@ -36,7 +36,7 @@ class _ChangePasswordScreenState extends State<ChangePasswordScreen> {
                 style: TextStyle(
                   fontSize: ConfigSize.screenHeight! * .028,
                   fontWeight: FontWeight.bold,
-                  color: primaryColor,
+                  color: AppColor.primaryColor,
                 ),
               ),
             ),
@@ -48,7 +48,7 @@ class _ChangePasswordScreenState extends State<ChangePasswordScreen> {
               style: TextStyle(
                 fontSize: ConfigSize.screenHeight! * .018,
                 fontWeight: FontWeight.bold,
-                color: blackColor,
+                color: AppColor.blackColor,
               ),
             ),
             SizedBox(
@@ -77,7 +77,7 @@ class _ChangePasswordScreenState extends State<ChangePasswordScreen> {
               style: TextStyle(
                 fontSize: ConfigSize.screenHeight! * .018,
                 fontWeight: FontWeight.bold,
-                color: blackColor,
+                color: AppColor.blackColor,
               ),
             ),
             SizedBox(

@@ -36,7 +36,7 @@ class HistoryLife extends StatelessWidget {
                     style: TextStyle(
                       fontSize: 14,
                       fontWeight: FontWeight.w600,
-                      color: primaryColor,
+                      color: AppColor.primaryColor,
                     ),
                   ),
                   Text(
@@ -44,7 +44,7 @@ class HistoryLife extends StatelessWidget {
                     style: TextStyle(
                       fontSize: 14,
                       fontWeight: FontWeight.w600,
-                      color: primaryColor,
+                      color: AppColor.primaryColor,
                     ),
                   ),
                 ],
@@ -61,7 +61,7 @@ class HistoryLife extends StatelessWidget {
                   style: TextStyle(
                       fontSize: 14,
                       fontWeight: FontWeight.w600,
-                      color: primaryColor),
+                      color: AppColor.primaryColor),
                 ),
                 SizedBox(
                   height: ConfigSize.screenHeight! * .01,
@@ -85,7 +85,7 @@ class HistoryLife extends StatelessWidget {
                   style: TextStyle(
                       fontSize: 20,
                       fontWeight: FontWeight.w600,
-                      color: primaryColor),
+                      color: AppColor.primaryColor),
                 ),
                 SizedBox(
                   height: ConfigSize.screenHeight! * .02,
@@ -97,7 +97,7 @@ class HistoryLife extends StatelessWidget {
                   style: TextStyle(
                       fontSize: 20,
                       fontWeight: FontWeight.w600,
-                      color: primaryColor),
+                      color:AppColor. primaryColor),
                 ),
                 SizedBox(
                   height: ConfigSize.screenHeight! * .02,

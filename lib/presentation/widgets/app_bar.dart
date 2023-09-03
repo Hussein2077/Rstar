@@ -5,10 +5,16 @@ import '../../core/asset_path.dart';
 import '../../core/config_size.dart';
 
 class CustomAppBar extends StatelessWidget {
-  const CustomAppBar({Key? key, required this.text, this.textColor=primaryColor, this.arrowColor=primaryColor}) : super(key: key);
+  const CustomAppBar(
+      {Key? key,
+      required this.text,
+      this.textColor = AppColor.primaryColor,
+      this.arrowColor = AppColor.primaryColor})
+      : super(key: key);
   final String text;
-final Color? textColor;
+  final Color? textColor;
   final Color? arrowColor;
+
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -34,7 +40,6 @@ final Color? textColor;
                 AssetsPath.arrowBack,
                 color: arrowColor,
               ),
-
               onPressed: () {
                 Navigator.pop(context);
               },
